@@ -1,24 +1,25 @@
 {
   "name": "iap-server",
   "version": "1.0.0",
-  "description": "AppstoreIAP",
-  "main": "index.js",
+  "description": "iap-server",
+  "main": "app.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toshi0383/appstoreIAP.git"
+    "url": "git+https://github.com/toshi0383/iap-server.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/toshi0383/appstoreIAP/issues"
+    "url": "https://github.com/toshi0383/iap-server/issues"
   },
-  "homepage": "https://github.com/toshi0383/appstoreIAP#readme",
+  "homepage": "https://github.com/toshi0383/iap-server#readme",
   "dependencies": {
     "body-parser": "^1.12.4",
     "express": "^4.12.4"
