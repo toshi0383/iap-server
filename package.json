@@ -1,0 +1,22 @@
+{
+  "name": "iap-server",
+  "version": "1.0.0",
+  "description": "AppstoreIAP",
+  "main": "app.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toshi0383/appstoreIAP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toshi0383/appstoreIAP/issues"
+  },
+  "homepage": "https://github.com/toshi0383/appstoreIAP#readme"
+}
