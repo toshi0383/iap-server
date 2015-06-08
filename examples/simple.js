@@ -4,7 +4,7 @@ var receipt = '{"signature" = "AmPcPxkSHxeumR/vCKEi+15Eo627uunIpPDuPQe/x9EUwwwSR
   + '"pod" = "100";'
   + '"signing-status" = "0"; }';
 
-var Validation= require('./Validation.js');
+var Validation= require('../Validation.js');
 
 var validation = new Validation();
 validation.check(new Buffer(receipt).toString('base64'), function (data, isValid) {
