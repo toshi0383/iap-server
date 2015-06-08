@@ -1,10 +1,10 @@
-AppstoreIAP
+iap-server
 ===========
 
-Appstore In-App Purchase server validation.
+Apple AppStore In-App Purchase server which verifies your receipt.
 
 For usage,please see examples/.
-        
+
         
         var Verify = require('./Verify.js');
 
