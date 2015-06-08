@@ -40,7 +40,7 @@ Validation.prototype.check = function(receipt,callback){
     if (json.status == 0) {
       callback(data, true);
     }else{
-      callback(data,true);
+      callback(data, false);
     }
   });
 };
