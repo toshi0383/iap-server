@@ -34,7 +34,7 @@ var verifyURL = 'https://sandbox.itunes.apple.com/verifyReceipt';
 //var verifyURL = 'https://buy.itunes.apple.com/verifyReceipt';
 
 Validation.prototype.check = function(receipt,callback){
-	var content = '{"receipt-data" : "' + new Buffer(receipt).toString('base64') + '"}';
+	var content = '{"receipt-data" : "' + receipt + '"}';
   post(verifyURL, content, function (data) {
     var json = JSON.parse(data);
     if (json.status == 0) {
