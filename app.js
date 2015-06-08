@@ -16,11 +16,7 @@ app.post('/', function(req,res) {
   verify.check(receipt, function (data, verifySuccess) {
     console.log('verifySuccess: ' + verifySuccess);
     console.log('data: ' + data);
-    res.write("{\"url\":\"http://www.example.com\"}")
-    if (!verifySuccess) {
-      res.status(500)
-    }
-    res.end()
+    res.status(verifySuccess ? 200 : 403).json({url:"http://www.example.com"})
   })
 });
 
