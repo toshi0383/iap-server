@@ -2,7 +2,7 @@
   "name": "iap-server",
   "version": "1.0.0",
   "description": "AppstoreIAP",
-  "main": "app.js",
+  "main": "index.js",
   "directories": {
     "example": "examples"
   },
