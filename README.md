@@ -1,7 +1,7 @@
 iap-server
 ===========
 
-Apple AppStore In-App Purchase server which verifies your receipt.
+Apple AppStore In-App Purchase server which verifies your receipt via Apple server.
 
 Please checkout examples/ for details.
 
