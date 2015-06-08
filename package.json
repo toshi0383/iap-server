@@ -15,7 +15,7 @@
     "url": "git+https://github.com/toshi0383/iap-server.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/toshi0383/iap-server/issues"
   },
