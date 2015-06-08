@@ -7,7 +7,7 @@ var receipt = '{"signature" = "AmPcPxkSHxeumR/vCKEi+15Eo627uunIpPDuPQe/x9EUwwwSR
 var Validation= require('./Validation.js');
 
 var validation = new Validation();
-validation.check(receipt, function (data, isValid) {
+validation.check(new Buffer(receipt).toString('base64'), function (data, isValid) {
   console.log('is valid :  ' + isValid);
   console.log('receive data :  ' + data);
 });
