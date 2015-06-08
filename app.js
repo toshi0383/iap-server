@@ -4,10 +4,6 @@ var path = require('path');
 var bodyParser = require('body-parser')
 
 app.use(bodyParser.json({ type: 'application/json' }))
-//app.use( bodyParser.json() );       // to support JSON-encoded bodies
-//app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  //extended: true
-//}));
 
 var Verify = require('./Verify.js');
 
