@@ -29,13 +29,13 @@ var post = function (url, data, cb) {
 };
 
 //the sandbox url: 
-var verifyURL = 'https://sandbox.itunes.apple.com/verifyReceipt';
-//the work url:
-//var verifyURL = 'https://buy.itunes.apple.com/verifyReceipt';
+var sandboxURL = 'https://sandbox.itunes.apple.com/verifyReceipt';
+//the production url:
+//var prodURL = 'https://buy.itunes.apple.com/verifyReceipt';
 
 Validation.prototype.check = function(receipt,callback){
 	var content = '{"receipt-data" : "' + receipt + '"}';
-  post(verifyURL, content, function (data) {
+  post(sandboxURL, content, function (data) {
     var json = JSON.parse(data);
     if (json.status == 0) {
       callback(data, true);
