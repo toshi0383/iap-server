@@ -8,8 +8,8 @@ Please checkout examples/ for details.
 ```
 var Verify = require('./Verify.js');
 var verify = new Verify();
-verify.check(receipt, function (data, isValid) {
-  console.log('is valid :  ' + isValid);
-  console.log('receive data :  ' + data);
+verify.check(receipt, function (data, verifySuccess) {
+  console.log('verifySuccess: ' + verifySuccess);
+  console.log('data: ' + data);
 });
 ```
