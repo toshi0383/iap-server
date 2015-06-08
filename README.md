@@ -1,9 +1,17 @@
 iap-server
 ===========
 
-Apple AppStore In-App Purchase server which verifies your receipt via Apple server.
+A Node.js server which verifies your receipt via Apple server.  
+Just deploy and POST your receipt-data, then it will send it to Apple Server,  
+and tells you if verification succeeded or not.
 
-Please checkout examples/ for details.
+```
+curl --data "receipt-data=aewfiafawefawefxxx...." [hostname]/
+```
+
+Please customize app.js for your own.
+
+checkout examples/ for more details and usage.
 
 ```
 var Verify = require('./Verify.js');
