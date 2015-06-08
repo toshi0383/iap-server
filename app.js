@@ -17,11 +17,14 @@ app.post('/', function(req,res) {
   var body = JSON.parse(JSON.stringify(req.body))
   var receipt = body.receipt_data
   var verify = new Verify();
-  verify.check(receipt, function (data, isValid) {
-    console.log('is valid :  ' + isValid);
-    console.log('receive data :  ' + data);
+  verify.check(receipt, function (data, verifySuccess) {
+    console.log('verifySuccess: ' + verifySuccess);
+    console.log('data: ' + data);
     res.write("{\"url\":\"http://www.example.com\"}")
-    res.end("\n")
+    if (!verifySuccess) {
+      res.status(500)
+    }
+    res.end()
   })
 });
 
