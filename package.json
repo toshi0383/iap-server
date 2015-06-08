@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/toshi0383/appstoreIAP/issues"
   },
-  "homepage": "https://github.com/toshi0383/appstoreIAP#readme"
+  "homepage": "https://github.com/toshi0383/appstoreIAP#readme",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4"
+  }
 }

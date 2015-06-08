@@ -2,7 +2,6 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser')
-var Base64 = require('js-base64').Base64;
 
 app.use(bodyParser.json({ type: 'application/json' }))
 //app.use( bodyParser.json() );       // to support JSON-encoded bodies
