@@ -59,5 +59,4 @@ Validation.prototype.check = function(receipt,callback){
   });
 };
 
-
 module.exports = Validation;
