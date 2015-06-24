@@ -10,7 +10,7 @@ var Verify = require('./Verify.js');
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 app.post('/', function(req,res) {
-  var body = JSON.parse(JSON.stringify(req.body))
+  var body = req.body
   var receipt = body.receipt_data
   var verify = new Verify();
   verify.check(receipt, function (data, verifySuccess) {
