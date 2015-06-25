@@ -9,7 +9,7 @@ var Verify = require('./Verify.js');
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
-app.post('/', function(req,res) {
+app.post('/verifyReceipt', function(req,res) {
   var body = req.body
   var receipt = body.receipt_data
   var verify = new Verify();
@@ -19,6 +19,9 @@ app.post('/', function(req,res) {
     res.status(200).json({url:"/files/beetv_ios/m017/demo.html"})
   })
 });
+app.get('/url', function(erq, res) {
+  res.status(200).json({url:"https://iap-verify-server.herokuapp.com/verifyReceipt"})
+})
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
