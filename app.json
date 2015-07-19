@@ -1,0 +1,6 @@
+{
+  "name": "iap-server",
+  "description": "A Node.js server which verifies your receipt via Apple server.",
+  "repository": "https://github.com/toshi0383/iap-server",
+  "keywords": ["iap", "apple", "receipt", "iOS", "StoreKit"]
+}
