@@ -16,7 +16,7 @@ app.post('/verifyReceipt', function(req,res) {
   verify.check(receipt, function (data, verifySuccess) {
     console.log('verifySuccess: ' + verifySuccess);
     console.log('data: ' + data);
-    res.status(200).json({url:"/files/beetv_ios/m017/demo.html"})
+    res.status(200).json({url:"http://github.com"})
   })
 });
 app.get('/url', function(erq, res) {
