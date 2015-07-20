@@ -8,7 +8,7 @@ Just deploy and POST your receipt-data, then it will send it to Apple Server,
 and tells you if verification succeeded or not.
 
 ```
-curl --data "receipt-data=aewfiafawefawefxxx...." [hostname]/
+curl --data "receipt-data=aewfiafawefawefxxx...." [hostname]/verifyReceipt
 ```
 
 Please customize app.js for your own.
